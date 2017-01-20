@@ -13,7 +13,7 @@
   git clone git@github.com:phdd/pandoc-ieee-conference.git
   ```
 
-* Use `make`, `make pdf` or `make html` to generate the thesis in your desired output format.
+* Use `make`, `make pdf` or `make html` to generate the publication in your desired output format.
 
 ## License
 
