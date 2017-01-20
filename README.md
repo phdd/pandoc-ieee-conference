@@ -15,6 +15,14 @@
 
 * Use `make`, `make pdf` or `make html` to generate the publication in your desired output format.
 
+## Acknowledgements
+
+* latexrun (https://github.com/aclements/latexrun)
+* IEEEtran Latex class for conference publications
+  (http://www.ieee.org/conferences_events/conferences/publishing/templates.html)
+* Latex Tables Pandoc-Filter by Wagner Macedo
+  (https://groups.google.com/d/msg/pandoc-discuss/RUC-tuu_qf0/h-H3RRVt1coJ)
+
 ## License
 
 Copyright 2017 Peter Heisig
