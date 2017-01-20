@@ -7,25 +7,45 @@ hello:
 	@echo -e " \033[1mSuper awesome Paper Builder v1.0\033[m"
 	@echo "-----------------------------------"
 
-all: pdf
+all: html pdf
 
 announce-figures-pdf:
 	@echo -e "> \033[1minkscape:\033[m SVG => PDF"
 
 pdf: hello latex announce-figures-pdf figures-pdf build-latex
+html: hello build-html
 
 latex: fix-bibliography-encoding
 	@echo -e "> \033[1mpandoc:\033[m Markdown => Latex"
 	@pandoc document.md \
-		--from=markdown \
-		--bibliography=bibliography.bib \
+		--from markdown \
+		--bibliography bibliography.bib \
 		--filter pandoc-crossref \
 		--filter resources/pandoc-table.py \
 		--filter resources/pandoc-figure.py \
-		--template=resources/bare-conf.tex \
-		--output=document.tex \
+		--template resources/bare-conf.tex \
+		--output document.tex \
 		--number-sections \
 		--natbib \
+		--smart
+
+build-html: fix-bibliography-encoding
+	@echo -e "> \033[1mpandoc:\033[m Markdown => HTML"
+	@pandoc document.md \
+		--from markdown \
+		--css resources/html.css \
+		--template resources/html5.html \
+		--bibliography bibliography.bib \
+		--filter resources/pandoc-figure.py \
+		--filter pandoc-crossref \
+		--filter pandoc-citeproc \
+		--output document.html \
+		--csl resources/ieee.csl \
+		--table-of-contents \
+		--number-sections \
+		--html-q-tags \
+		--natbib \
+		--webtex \
 		--smart
 
 build-latex:

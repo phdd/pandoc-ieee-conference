@@ -32,6 +32,21 @@ hyphenation:
   - net-works
   - semi-conduc-tor
 
+secPrefix:
+  - section
+  - sections
+
+tblPrefix:
+  - table
+  - tables
+
+figPrefix:
+  - figure
+  - figures
+
+lstPrefix:
+  - listing
+  - listings
 ---
 
 # Introduction
