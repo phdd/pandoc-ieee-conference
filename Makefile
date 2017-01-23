@@ -5,10 +5,10 @@ FIGURES = $(wildcard figures/*.svg)
 WATCH_SCRIPT = \
 	from livereload import Server, shell; \
 	server = Server(); \
-	server.watch('document.md', shell('make html', cwd = '.')); \
+	server.watch('document.md', shell('make -j 4', cwd = '.')); \
 	server.serve(root = '.'); \
 
-watch-html:
+watch:
 	echo "$(WATCH_SCRIPT)" | python
 
 hello:
