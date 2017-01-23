@@ -116,5 +116,6 @@ sympy-plots-for-*.tex/
 .directory
 
 !*.final.pdf
+!resources/html5.html
 *.lock
 *.db
