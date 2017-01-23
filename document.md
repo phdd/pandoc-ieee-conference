@@ -1,7 +1,7 @@
 ---
 title: |
   Bare Demo of IEEEtran.cls  
-  for IEEE Conferences
+  for IEEE Confäränces
 
 abstract: |
   Enim dolore eu officia mollit ut elit eiusmod ex quis. Aliqua aliqua consectetur sit et mollit consequat labore est id ut. Tempor occaecat dolor nulla quis in aute et. Aliquip anim aliqua id elit do qui velit quis minim eu ea aliqua. Exercitation id mollit in minim dolor sint deserunt officia esse. Mollit dolore ea et quis ipsum qui commodo deserunt reprehenderit. Reprehenderit enim ea ex ipsum sit duis est laborum non ad elit ut irure. Incididunt aliquip magna magna amet nostrud ut Lorem eiusmod.
