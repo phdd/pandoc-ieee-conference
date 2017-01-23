@@ -117,5 +117,6 @@ sympy-plots-for-*.tex/
 
 !*.final.pdf
 !resources/html5.html
+!resources/bare-conf.tex
 *.lock
 *.db
