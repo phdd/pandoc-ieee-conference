@@ -2,6 +2,15 @@
 
 FIGURES = $(wildcard figures/*.svg)
 
+WATCH_SCRIPT = \
+	from livereload import Server, shell; \
+	server = Server(); \
+	server.watch('document.md', shell('make html', cwd = '.')); \
+	server.serve(root = '.'); \
+
+watch-html:
+	echo "$(WATCH_SCRIPT)" | python
+
 hello:
 	@echo ""
 	@echo -e " \033[1mSuper awesome Paper Builder v1.0\033[m"
